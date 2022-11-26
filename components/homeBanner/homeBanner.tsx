@@ -12,7 +12,9 @@ export const HomeBanner = () => {
         <div className={classNames('container', styles.textContainer)}>
           <div className={styles.logoBlock}>
             <div className={styles.bannerTitle}>
-              <Image className={styles.logo} src={logo} alt="logo" />
+              <div>
+                <Image className={styles.logo} src={logo} alt="logo" />
+              </div>
 
               <TypingEffect
                 className={styles.typingText}
