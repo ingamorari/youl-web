@@ -1,0 +1,64 @@
+@import './styles/variables.module';
+
+.bannerContainer {
+  background-color: $yellow;
+
+}
+
+.textContainer {
+  flex-wrap: wrap;
+  padding: 100px 25px 85px;
+  position: relative;
+  @media screen and (max-width: 700px) {
+    padding: 40px 25px 50px;
+  }
+}
+
+.logoBlock {
+  flex: 0 0 auto;
+  width: 100%;
+
+  .bannerTitle {
+    display: flex;
+    margin-bottom: 80px;
+    @media screen and (max-width: 700px) {
+      margin-bottom: 48px;
+    }
+
+    .typingText {
+      position: relative;
+      top: 27px;
+      margin-left: 20px;
+      font-family: 'Gambetta', sans-serif;
+      font-weight: 300;
+      font-size: 90px;
+    }
+  }
+}
+
+.logo {
+  width: 340px;
+  height: auto;
+  @media screen and (max-width: 700px) {
+    width: 150px;
+  }
+}
+
+.youllImage {
+  position: absolute;
+  right: 25px;
+  bottom: -282px;
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+}
+
+.textBlock {
+  @media screen and (min-width: 1300px) {
+    width: 58%;
+  }
+}
+
+.textWrap {
+  white-space: nowrap;
+}
